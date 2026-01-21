@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+}
+
+:root {
+  --primary-color: #ff523b;
+  --backgroung-color: #f1d3d3;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  background-image: radial-gradient(white, var(--backgroung-color));
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 52px;
+}
+
+li {
+  list-style: none;
+  opacity: 0.7;
+}
+
+.container {
+  padding: 0 250px;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0 0;
+}
+
+.top-nav .logo {
+  width: 150px;
+}
+
+.top-nav .cart-icon {
+  width: 40px;
+}
+
+.top-nav div,
+.top-nav div ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/**************************** Hero ****************************/
+.hero {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.hero div:nth-child(2) img {
+  width: 600px;
+}
+
+.hero div:nth-child(1) p {
+  font-size: 15px;
+  opacity: 0.8;
+  padding: 0 0 25px;
+}
+
+/******************** General SECTION ***********************/
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-title h1 {
+  font-size: 24px;
+  color: rgb(85, 85, 85);
+}
+
+.section-title span {
+  width: 70px;
+  background-color: var(--primary-color);
+  height: 4px;
+  border-radius: 52px;
+}
+
+/******************** ADVERT SECTION ***********************/
+.advert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+
+.advert img {
+  width: 31%;
+}
+
+/******************** Featured SECTION ***********************/
+.product-main {
+  margin-top: 100px;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+
+.product div {
+  width: 24%;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.product div:hover {
+  transform: translateY(-20px);
+}
+
+.product div img {
+  width: 100%; /* 23% */
+}
