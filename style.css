@@ -15,22 +15,41 @@ body {
   font-family: sans-serif;
 }
 
-header {
-  background-image: radial-gradient(white, var(--backgroung-color));
-  height: 100svh;
-  display: flex;
-  flex-direction: column;
-}
-
 h1 {
   font-size: 50px;
 }
 
+p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
 button {
-  padding: 10px 20px;
   background-color: var(--primary-color);
   color: white;
+  padding: 15px 30px;
   border-radius: 52px;
+  cursor: pointer;
+}
+
+header {
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  background-image: radial-gradient(white, var(--backgroung-color));
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 35px;
 }
 
 li {
@@ -42,29 +61,42 @@ li {
   padding: 0 250px;
 }
 
-.top-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 25px 0 0;
+.logo {
+  width: 170px;
 }
 
-.top-nav .logo {
-  width: 150px;
-}
-
-.top-nav .cart-icon {
+.cart {
   width: 40px;
 }
 
-.top-nav div,
-.top-nav div ul {
+.nav-right {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 35px;
 }
 
-/**************************** Hero ****************************/
+/**************************** GENERAL STYLES ****************************/
+.title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.title-section span {
+  width: 60px;
+  background-color: var(--primary-color);
+  height: 4px;
+  border-radius: 52px;
+}
+
+.title-section p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/**************************** HERO SECTION ****************************/
 .hero {
   display: flex;
   align-items: center;
@@ -72,70 +104,90 @@ li {
   justify-content: space-between;
 }
 
-.hero div:nth-child(2) img {
+.hero img {
   width: 600px;
 }
 
-.hero div:nth-child(1) p {
-  font-size: 15px;
-  opacity: 0.8;
-  padding: 0 0 25px;
+.hero p {
+  margin: 4px 0px 20px;
 }
 
-/******************** General SECTION ***********************/
-.section-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
-
-.section-title h1 {
-  font-size: 24px;
-  color: rgb(85, 85, 85);
-}
-
-.section-title span {
-  width: 70px;
-  background-color: var(--primary-color);
-  height: 4px;
-  border-radius: 52px;
-}
-
-/******************** ADVERT SECTION ***********************/
-.advert {
+/**************************** category SECTION ****************************/
+.category {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 60px 0;
+  margin-top: 65px;
+  margin-bottom: 65px;
 }
 
-.advert img {
-  width: 31%;
+.category img {
+  width: 32%;
 }
 
-/******************** Featured SECTION ***********************/
-.product-main {
-  margin-top: 100px;
+/**************************** FEATURE STYLES ****************************/
+.feature-main {
+  margin-top: 95px;
+  margin-bottom: 65px;
 }
 
-.product {
+.feature {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 60px 0;
 }
 
-.product div {
+.feature div {
   width: 24%;
-  transition: all ease-in-out 0.3s;
-  cursor: pointer;
 }
 
-.product div:hover {
-  transform: translateY(-20px);
+.feature div img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
-.product div img {
-  width: 100%; /* 23% */
+/**************************** RESPONSIVE ****************************/
+@media (max-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  header {
+    /* height: 90svh; */
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
+  .left-hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .hero-right {
+    /* margin-top: 100px; */
+  }
+
+  .hero {
+    margin-top: 60px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 70px;
+  }
+
+  .hero p {
+  }
+
+  .hero img {
+    width: 100%;
+  }
 }
