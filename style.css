@@ -191,3 +191,16 @@ li {
     width: 100%;
   }
 }
+
+/* BOX SHADOW CSS PROPERTIES SAMPLE: */
+.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-lg {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-xl {
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
+}
