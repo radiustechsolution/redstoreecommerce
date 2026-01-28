@@ -205,7 +205,7 @@ li {
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
 }
 
-/* INVERTED COLORS IN CSS: */
-.invert-colors {
-  filter: invert(1); /* Inverts all colors of the element */
+/* BLACK AND WHITE COLORS IN CSS: */
+.black-white {
+  filter: grayscale(1);
 }
